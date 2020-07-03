@@ -5,7 +5,6 @@ Este repositorio contiene un ejemplo completo de cómo podemos subir imágenes d
 Los ficheros clave son los siguientes:
 
 ## AppFront
----
 
 ### form-producto.component.ts
 
@@ -14,7 +13,6 @@ Dentro de este componente generamos toda la lógica necesaria para detectar el c
 El objeto de tipo FormData generado dentro del método **onSubmit** contiene los datos de la imagen y el resto de los campos del formulario. Una vez generado este objeto será enviado al servicio **productos.service.ts** para poder ser enviado al servidor de Express.
 
 ## AppBack
----
 
 ### /router/api/productos.js
 
