@@ -1,0 +1,35 @@
+.productos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.producto {
+    width: 300px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(29, 48, 48);
+    border-radius: 10px;
+    margin: 0 10px 10px 10px;
+    background-color: cadetblue;
+    color: white;
+}
+
+.producto h3 {
+    font-family: 'Montserrat Subrayada', sans-serif;
+}
+
+.producto img {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid rgb(29, 48, 48);
+    border-radius: 10px;
+}
+
+.producto .precio {
+    font-family: 'Bungee', cursive;
+}

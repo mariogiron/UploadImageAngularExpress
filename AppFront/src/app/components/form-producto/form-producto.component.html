@@ -1,0 +1,24 @@
+<h3>Insertar nuevo Producto</h3>
+<form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label>Nombre</label>
+        <input type="text" class="form-control" formControlName="nombre">
+    </div>
+    <div class="form-group">
+        <label>Descripción</label>
+        <input type="text" class="form-control" formControlName="descripcion">
+    </div>
+    <div class="form-group">
+        <label>Precio</label>
+        <input type="text" class="form-control" formControlName="precio">
+    </div>
+    <div class="form-group">
+        <label>Activo</label>
+        <input type="text" class="form-control" formControlName="activo">
+    </div>
+    <div class="form-group">
+        <label>Imagen</label>
+        <input type="file" class="form-control" name="imagen" (change)="onChange($event)">
+    </div>
+    <input type="submit" value="Enviar" class="btn btn-block btn-info">
+</form>

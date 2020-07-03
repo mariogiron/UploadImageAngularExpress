@@ -1,0 +1,9 @@
+<h2 class="text-center mb-4">Lista de Productos</h2>
+<div class="productos">
+    <div class="producto" *ngFor="let producto of productos">
+        <h3 class="text-center">{{ producto.nombre }}</h3>
+        <img [src]="'http://localhost:3000/images/' + producto.imagen">
+        <p>{{ producto.descripcion }}</p>
+        <p class="precio">{{ producto.precio | currency:'EUR' }}</p>
+    </div>
+</div>
